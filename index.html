@@ -26,30 +26,38 @@
       <span class="float-right font-medium text-lg">GitHub</span>
     </div>
 
+    <div class="container px-3 py-5 text-center">
+      <label>Initial price of the stock</label>
+      <input
+        id="initial-price"
+        class="border-2 rounded-lg shadow py-2 px-3"
+        type="number"
+        name="initail-price"
+      /><br />
+      <label>Total quantity of the stocks</label>
+      <input
+        id="quantity"
+        class="border-2 rounded-lg shadow py-2 px-3"
+        type="number"
+        name="quantity"
+      /><br />
+      <label>Current price of the stock</label>
+      <input
+        id="current-price"
+        class="border-2 rounded-lg shadow py-2 px-3"
+        type="number"
+        name="current-price"
+      /><br />
+      <button
+        class="my-3 rounded-lg bg-red-100 px-2 py-1"
+        onclick="calculate()"
+      >
+        Stalk it
+      </button>
+    </div>
+
     <div>
-      <form>
-        <label>Initial price of the stock</label>
-        <input
-          class="border-2 rounded-lg shadow py-2 px-3"
-          type="text"
-          name="initail-price"
-        /><br />
-        <label>Total quantity of the stocks</label>
-        <input
-          class="border-2 rounded-lg shadow py-2 px-3"
-          type="text"
-          name="quantity"
-        /><br />
-        <label>Current price of the stock</label>
-        <input
-          class="border-2 rounded-lg shadow py-2 px-3"
-          type="text"
-          name="current-price"
-        />
-        <button class="rounded-lg bg-red-100 px-2 py-1" onclick="calculate()">
-          Stalk it
-        </button>
-      </form>
+      <h4 id="res"></h4>
     </div>
 
     <script src="src/index.js"></script>
