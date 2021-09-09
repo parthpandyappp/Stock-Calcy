@@ -19,47 +19,112 @@
     }
   </style>
 
-  <body>
+  <body class="flex flex-col justify-center items-center">
     <!-- Navbar -->
-    <div class="flow-root my-5 mx-3 px-3 py-5 bg-red-100 rounded-md">
-      <h1 class="float-left font-bold text-xl">Stock Calcy</h1>
-      <span class="float-right font-medium text-lg">GitHub</span>
-    </div>
+    <nav
+      class="
+        flex
+        justify-between
+        h-20
+        w-screen
+        items-center
+        bg-blue-100
+        shadow
+        md:px-6
+      "
+    >
+      <h1 class="flex font-bold">
+        <span class="px-2"
+          ><img
+            src="https://img.icons8.com/material-two-tone/24/000000/cash.png" /></span
+        >Stock Calcy
+      </h1>
+      <div class="flex space-x-2 font-bold items-center">
+        <a
+          class="flex items-center"
+          href="https://github.com/parthpandyappp/stock-calcy/"
+          ><span
+            ><img
+              src="https://img.icons8.com/doodle/48/000000/github--v1.png" /></span
+        ></a>
+        <a
+          class="flex items-center px-1"
+          href="https://parthpandyappp.github.io/"
+          ><span
+            ><img
+              src="https://img.icons8.com/bubbles/50/000000/gender-neutral-user.png" /></span
+        ></a>
+      </div>
+    </nav>
 
-    <div class="container px-3 py-5 text-center">
-      <label>Initial price of the stock</label>
-      <input
-        id="initial-price"
-        class="border-2 rounded-lg shadow py-2 px-3"
-        type="number"
-        name="initail-price"
-      /><br />
-      <label>Total quantity of the stocks</label>
-      <input
-        id="quantity"
-        class="border-2 rounded-lg shadow py-2 px-3"
-        type="number"
-        name="quantity"
-      /><br />
-      <label>Current price of the stock</label>
-      <input
-        id="current-price"
-        class="border-2 rounded-lg shadow py-2 px-3"
-        type="number"
-        name="current-price"
-      /><br />
-      <button
-        class="my-3 rounded-lg bg-red-100 px-2 py-1"
-        onclick="calculate()"
-      >
-        Stalk it
-      </button>
+    <div
+      class="
+        flex flex-col
+        justify-center
+        items-center
+        h-screen
+        w-screen
+        space-y-2
+      "
+    >
+      <h1 class="text-4xl my-3 font-bold">Stock Calcy</h1>
+      <div class="flex flex-col mb-5">
+        <label class="font-bold text-left">Initial price of the stock</label>
+        <input
+          id="initial-price"
+          class="border-2 border-gray-300 px-2 py-2 rounded"
+          type="number"
+          name="initail-price"
+        /><br />
+        <label class="font-bold text-left">Total quantity of the stocks</label>
+        <input
+          id="quantity"
+          class="border-2 border-gray-300 px-2 py-2 rounded"
+          type="number"
+          name="quantity"
+        /><br />
+        <label class="font-bold text-left">Current price of the stock</label>
+        <input
+          id="current-price"
+          class="border-2 border-gray-300 px-2 py-2 rounded"
+          type="number"
+          name="current-price"
+        /><br />
+        <button
+          href="#res"
+          class="bg-blue-500 py-2 rounded font-bold text-white"
+          onclick="calculate()"
+        >
+          Stalk it
+        </button>
+      </div>
     </div>
-
-    <div>
+    <div class="font-bold text-lg mx-3">
       <h4 id="res"></h4>
     </div>
 
     <script src="src/index.js"></script>
   </body>
+  <footer
+    class="
+      flex
+      justify-center
+      items-center
+      bg-blue-100
+      space-x-2
+      h-20
+      w-screen
+      mt-4
+    "
+  >
+    <a href="https://twitter.com/parthpandyappp/">
+      <img src="https://img.icons8.com/doodle/48/000000/twitter-circled.png" />
+    </a>
+    <a href="https://www.linkedin.com/in/parthpandyappp">
+      <img src="https://img.icons8.com/doodle/48/000000/linkedin-circled.png" />
+    </a>
+    <a href="https://github.com/parthpandyappp"
+      ><img src="https://img.icons8.com/plasticine/60/000000/github.png"
+    /></a>
+  </footer>
 </html>
