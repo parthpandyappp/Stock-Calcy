@@ -17,6 +17,9 @@
     body {
       font-family: Poppins;
     }
+    .h-75 {
+      height: 72vh;
+    }
   </style>
 
   <body class="flex flex-col justify-center items-center">
@@ -58,14 +61,7 @@
     </nav>
 
     <div
-      class="
-        flex flex-col
-        justify-center
-        items-center
-        h-screen
-        w-screen
-        space-y-2
-      "
+      class="flex flex-col justify-center items-center h-75 w-screen space-y-2"
     >
       <h1 class="text-4xl my-3 font-bold">Stock Calcy</h1>
       <div class="flex flex-col mb-5">
@@ -98,9 +94,9 @@
           Stalk it
         </button>
       </div>
-    </div>
-    <div class="font-bold text-lg mx-3">
-      <h4 id="res"></h4>
+      <div class="font-bold text-xl mx-3">
+        <h4 id="res"></h4>
+      </div>
     </div>
 
     <script src="src/index.js"></script>
